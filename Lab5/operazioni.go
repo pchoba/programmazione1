@@ -1,11 +1,13 @@
 package main
+
 import "fmt"
+
+func operazioni(a, b int) (int, int, int) {
+	return a + b, a * b, a - b
+}
+
 func main() {
-	var a ,b float64
-	fmt.Scan(&a)
-	fmt.Scan(&b)
-	fmt.Println("addizione: ", a+b)
-	fmt.Println("sottrazione: ", a-b)
-	fmt.Println("prodotto: ", a*b)
-	fmt.Println("quoziente: ", a/b)
+	var a, b int
+	fmt.Scan(&a, &b)
+	fmt.Println(operazioni(a, b))
 }
